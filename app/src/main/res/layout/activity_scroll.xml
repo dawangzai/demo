@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_home_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:minHeight="85dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.mxjapp.banner.EasyBanner
+                    android:id="@+id/main_home_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:indicator="@drawable/selector_ic_indicator"
+                    app:indicatorDivider="6dp"
+                    app:interval="5000" />
+
+                <View
+                    android:id="@+id/main_home_banner_subsidiary"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/colorPrimary"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/main_home_search_container"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@color/transparent"
+                android:paddingTop="25dp"
+                app:layout_collapseMode="pin">
+
+                <TextView
+                    android:id="@+id/toolbar_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/shape_search_w"
+                    android:drawableStart="@drawable/ic_search_gray_s"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_search_job"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="6dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/color_text_light"
+                    android:textSize="14sp" />
+            </FrameLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_TL"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/layer_bottom_line"
+            android:paddingBottom="1dp"
+            app:tabBackground="@drawable/selector_bg_job_tab"
+            app:tabIndicatorColor="@color/white"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/color_text_deep"
+            app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+            app:tabTextColor="@color/color_text_normal" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="测试内容" />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

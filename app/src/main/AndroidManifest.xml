@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangzai.lovesy.demo2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ScrollableActivity" />
+        <activity android:name=".socket.SocketActivity" />
+        <activity
+            android:name=".ViewDemo.ViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".profiler.ActivityOne" />
+        <activity android:name=".profiler.ActivityTwo" />
+        <activity android:name=".customerview.CustomerViewActivity" />
+        <activity android:name=".scroll.ScrollActivity" />
+
+        <service
+            android:name=".service.TestService"
+            android:process="com.wangzai.lovesy.demo2.test" />
+        <service
+            android:name=".service.Guard1Service"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":guard1" />
+        <service
+            android:name=".service.Guard2Service"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":guard2" />
+    </application>
+
+</manifest>

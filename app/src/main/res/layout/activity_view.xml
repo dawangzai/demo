@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.wangzai.lovesy.demo2.ViewDemo.FlowLayout-->
+    <!--android:id="@+id/flowLayout"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="java语言" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="语言111" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="java语言345678" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="java语言tyuiopl" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="java语言qwertgfvbnh" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="java语言" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="java语言12" />-->
+
+    <!--<TextView-->
+    <!--style="@style/text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:text="java语言234" />-->
+    <!--</com.wangzai.lovesy.demo2.ViewDemo.FlowLayout>-->
+
+    <com.wangzai.lovesy.demo2.ViewDemo.TagTextLayout
+        android:id="@+id/tagTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+    </com.wangzai.lovesy.demo2.ViewDemo.TagTextLayout>
+
+</android.support.constraint.ConstraintLayout>
